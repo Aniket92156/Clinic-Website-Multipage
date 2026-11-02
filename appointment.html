@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request an appointment with Health Care Clinic in Kharar.">
+  <title>Book Consultation | Health Care Clinic</title>
+  <link rel="stylesheet" href="clinic.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="Clinic.html" aria-label="Health Care Clinic home">
+      <div class="logo">✚</div>
+      <div><span>Health Care Clinic</span><small>Kharar · Dr. Sandeep Kahlon</small></div>
+    </a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open navigation menu">☰</button>
+    <nav id="nav" aria-label="Main navigation">
+      <a class="nav-link" data-page="home" href="Clinic.html">Home</a>
+      <a class="nav-link" data-page="about" href="about.html">About</a>
+      <a class="nav-link" data-page="services" href="services.html">Services</a>
+      <a class="nav-link" data-page="reviews" href="reviews.html">Reviews</a>
+      <a class="nav-link" data-page="visit" href="visit.html">Visit</a>
+      <a class="nav-link active nav-cta" data-page="appointment" href="appointment.html">Book Consultation</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section>
+<div class="section">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Consultation</div>
+<h2>Request an appointment.</h2>
+<p class="muted">Fill in your details and the clinic can contact you to confirm availability.</p>
+</div>
+<div class="form-wrap">
+<div>
+<div class="card">
+<div class="icon">☎</div>
+<h3>Prefer to call?</h3>
+<p class="muted">For the fastest response, call the clinic directly.</p>
+<a class="btn primary" href="tel:07658870070">076588 70070</a>
+</div>
+<div class="notice" style="margin-top:18px">
+<strong>Important:</strong> This website is for clinic information and appointment requests. In an emergency, contact local emergency services or visit the nearest emergency department.
+          </div>
+</div>
+<form id="appointmentForm">
+<label for="name">Full name</label>
+<input id="name" placeholder="Your name" required=""/>
+<label for="phone">Phone number</label>
+<input id="phone" placeholder="Your phone number" required="" type="tel"/>
+<label for="date">Preferred date</label>
+<input id="date" required="" type="date"/>
+<label for="time">Preferred time</label>
+<select id="time" required="">
+<option value="">Select a time</option>
+<option>Morning · 9:00 am – 2:30 pm</option>
+<option>Evening · 4:00 pm – 8:30 pm</option>
+<option>Sunday · By appointment</option>
+</select>
+<label for="message">Brief reason for visit</label>
+<textarea id="message" placeholder="Optional"></textarea>
+<button class="btn primary" style="width:100%" type="submit">Send appointment request</button>
+<p class="muted" style="font-size:12px;margin:12px 0 0">Submitting this demo form does not automatically book a confirmed appointment.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3>Health Care Clinic</h3><p>Careful medicine, gentle hands. Honest, affordable healthcare for families in Kharar.</p></div>
+      <div><h3>Quick links</h3><p><a href="about.html">About</a></p><p><a href="services.html">Services</a></p><p><a href="reviews.html">Reviews</a></p><p><a href="visit.html">Visit</a></p></div>
+      <div><h3>Contact</h3><p><a href="tel:07658870070">076588 70070</a></p><p>SCO. 3, Arista Complex,<br>Kharar, Punjab 140301</p></div>
+    </div>
+    <div class="copyright"><span>© 2026 Health Care Clinic</span><span>Dr. Sandeep Kahlon · MBBS · General Physician</span></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Thank you. The clinic can contact you to confirm the appointment.</div>
+<script src="clinic.js" defer></script>
+</body>
+</html>
